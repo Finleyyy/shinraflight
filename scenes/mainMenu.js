@@ -10,6 +10,14 @@ class MainMenu extends Phaser.Scene {
 	create() {
 		let background = this.add.sprite(0, 0, 'background_image');
 		background.setOrigin(0, 0);
+
+		const startbutton = this.add.text(375, 200, 'Start!', { fill: '#0f0' })
+		.setInteractive()
+		.on('pointerdown', () => { this.scene.start('GameScene') });
+		
+		const shopButton = this.add.text(375, 350, 'Shop!', { fill: '#0f0' })
+                .setInteractive()
+                .on('pointerdown', () => { this.scene.start('ShopScene') });
 	}
 }
 export default MainMenu;

@@ -6,7 +6,7 @@ class GameScene extends Phaser.Scene {
 	preload() {
 		this.load.image('game_background_image', 'assets/images/gameBackground.jpg');
 		this.load.spritesheet('dude', 
-        'assets/images/test.png',
+        'assets/images/dude.png',
         { frameWidth: 32, frameHeight: 48 }
     );
 	}

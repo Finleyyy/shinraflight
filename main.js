@@ -13,7 +13,7 @@ let config = {
     height: 600,
     physics: {
         default: 'arcade',
-        arcade: { debug: true }
+        arcade: { debug: true, gravity: 400}
     }
 };
 

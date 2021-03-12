@@ -1,3 +1,5 @@
+
+import VirtualJoyStickPlugin from '../../plugins/virtualjoystick-plugin.js';
 import MainMenu from './scenes/mainMenu.js';
 import ShopScene from './scenes/shopScene.js';
 import GameScene from './scenes/gameScene.js';
@@ -14,6 +16,13 @@ let config = {
     physics: {
         default: 'arcade',
         arcade: { debug: true }
+    },
+    plugins: {
+        global: [{
+            key: 'rexVirtualJoyStick',
+            plugin: VirtualJoyStickPlugin,
+            start: true
+        }]
     }
 };
 
